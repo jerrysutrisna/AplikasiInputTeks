@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textSize="15sp"
+        android:textStyle="normal|bold"
+        android:layout_alignParentTop="true"
+        android:textAlignment="center"
+        android:padding="50dp"
+        android:background="?attr/colorButtonNormal"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:hint="Masukkan Teks"
+        android:inputType="textPersonName"
+        android:ems="12"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSimpan"
+        android:text="SIMPAN"
+        android:layout_below="@+id/editText"
+        android:layout_alignParentStart="true"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnHapus"
+        android:text="HAPUS"
+        android:layout_below="@+id/btnSimpan"
+        android:layout_alignParentStart="true"/>
+
+</RelativeLayout>
